@@ -12,6 +12,11 @@ public class Main5 {
     }
 
     private static void textLines() {
+        System.out.println("Wpisane linie: ");
+        getLines().stream().forEach(element -> System.out.println(element));
+    }
+
+    public static List<String> getLines() {
         Scanner scanner = new Scanner(System.in);
         List<String> textLines = new ArrayList<>();
         String nextString;
@@ -23,8 +28,8 @@ public class Main5 {
             nextString = scanner.nextLine();
             textLines.add(nextString);
         }
-        System.out.println("Wpisane linie: ");
-        textLines.stream().forEach(element -> System.out.println(element));
+        textLines.remove("quit");
+        return textLines;
     }
 
 }
