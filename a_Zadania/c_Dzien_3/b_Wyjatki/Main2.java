@@ -6,7 +6,7 @@ public class Main2 {
         System.out.println(divide(10, 0));
     }
 
-    static int divide(int a, int b) {
+    public static int divide(int a, int b) {
         try {
             return a / b;
         } catch (ArithmeticException exception) {
