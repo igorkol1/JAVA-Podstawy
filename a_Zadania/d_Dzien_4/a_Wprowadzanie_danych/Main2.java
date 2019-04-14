@@ -12,7 +12,7 @@ public class Main2 {
         operations();
     }
 
-    protected static int getInt() {
+    public static int getInt() {
         Scanner scan = new Scanner(System.in);
         while (!scan.hasNextInt()) {
             scan.next();
